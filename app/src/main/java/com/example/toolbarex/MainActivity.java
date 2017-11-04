@@ -51,8 +51,6 @@ public class MainActivity extends AppCompatActivity
     public static final String APP_PREF_generatedURL = "genURL";
     public static  final String APP_PREF_Login = "noname";
 
-    //public static final String APP_HashString = "";
-
     //Создаём переменную, представляющую экземпляр класса SharedPreferences,
     //который отвечает за работу с настройками:
     //Внутри метода onCreate() вы инициализируете эту переменную::
@@ -289,6 +287,7 @@ public class MainActivity extends AppCompatActivity
         Получить объект Editor можно через вызов метода edit() объекта SharedPreferences.
         После того, как вы внесли все необходимые изменения, вызовите метод apply(),
         чтобы изменения вступили в силу. */
+
         SharedPreferences.Editor editor = mSettings.edit();
         editor.putString(APP_PREF_hash, hashString);
         editor.putString(APP_PREF_generatedURL, generatedURLString);
@@ -297,6 +296,7 @@ public class MainActivity extends AppCompatActivity
         // Этот код был добавлен для работы Google Play
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
+
         Action viewAction = Action.newAction(
                 Action.TYPE_VIEW, // TODO: choose an action type.
                 "Main Page", // TODO: Define a title for the content shown.
@@ -319,6 +319,7 @@ public class MainActivity extends AppCompatActivity
         Получить объект Editor можно через вызов метода edit() объекта SharedPreferences.
         После того, как вы внесли все необходимые изменения, вызовите метод apply(),
         чтобы изменения вступили в силу. */
+
         SharedPreferences.Editor editor = mSettings.edit();
         editor.putString(APP_PREF_hash, hashString);
         editor.putString(APP_PREF_generatedURL, generatedURLString);
