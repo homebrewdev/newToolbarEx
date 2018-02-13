@@ -9,7 +9,7 @@
     <string name="action_save">Save</string>
     <string name="about">About</string>
     <string name="action_favorite">Favorite</string>
-    <string name="aboutText">About App \n© HomeBrew Developers\nCode - Egor Devyatov (2016)</string>
+    <string name="aboutText">About App \n© HomeBrew Developers\nCode - Egor Devyatov (2018)</string>
     <string name="MainText">Demo with App Bar и NavDrawer \nMaterial Design\n© HomeBrew Developers (Egor Devyatov)</string>
     <string name="Info">Demo App. \n© HomeBrew Developers (Egor Devyatov)</string>
     <string name="toastSave">Save successful!</string>
