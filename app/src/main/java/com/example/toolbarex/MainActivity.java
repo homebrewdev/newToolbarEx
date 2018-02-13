@@ -103,6 +103,10 @@ public class MainActivity extends AppCompatActivity
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
+        //читаем из Shared Pref логин пользователя и делаем заголовок окна этим логином
+        userLogin = mSettings_Login.getString(APP_PREF_Login, "noname");
+        setTitle(userLogin); //устанавливаем заголовок окна main activity логин пользователя
     }
 
     @Override
@@ -119,6 +123,9 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        //читаем из Shared Pref логин пользователя и делаем заголовок окна этим логином
+        userLogin = mSettings_Login.getString(APP_PREF_Login, "noname");
+        setTitle(userLogin); //устанавливаем заголовок окна main activity логин пользователя
         return true;
     }
 
@@ -276,6 +283,10 @@ public class MainActivity extends AppCompatActivity
                 Uri.parse("android-app://com.example.toolbarex/http/host/path")
         );
         AppIndex.AppIndexApi.start(client, viewAction);
+
+        //читаем из Shared Pref логин пользователя и делаем заголовок окна этим логином
+        userLogin = mSettings_Login.getString(APP_PREF_Login, "noname");
+        setTitle(userLogin); //устанавливаем заголовок окна main activity логин пользователя
     }
 
     @Override
@@ -287,7 +298,6 @@ public class MainActivity extends AppCompatActivity
         Получить объект Editor можно через вызов метода edit() объекта SharedPreferences.
         После того, как вы внесли все необходимые изменения, вызовите метод apply(),
         чтобы изменения вступили в силу. */
-
         SharedPreferences.Editor editor = mSettings.edit();
         editor.putString(APP_PREF_hash, hashString);
         editor.putString(APP_PREF_generatedURL, generatedURLString);
@@ -319,7 +329,6 @@ public class MainActivity extends AppCompatActivity
         Получить объект Editor можно через вызов метода edit() объекта SharedPreferences.
         После того, как вы внесли все необходимые изменения, вызовите метод apply(),
         чтобы изменения вступили в силу. */
-
         SharedPreferences.Editor editor = mSettings.edit();
         editor.putString(APP_PREF_hash, hashString);
         editor.putString(APP_PREF_generatedURL, generatedURLString);
