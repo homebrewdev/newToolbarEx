@@ -7,7 +7,7 @@
     <string name="Info">Демонстрационная программа. \n© HomeBrew Developers (Егор Девятов)</string>
     <string name="Login_Text">Ввод данных Вашей учетной записи, либо регистрация новой учетной записи:</string>
     <string name="Logo">HomeBrew Developers</string>
-    <string name="MainText">Демонстрация работы с использованием App Bar \nMaterial Design\n© HomeBrew Developers (Егор Девятов)</string>
+    <string name="MainText">Демонстрация работы с использованием \nMaterial Design\n© HomeBrew Developers (Егор Девятов)</string>
     <string name="Send">Создать ссылку, поделиться с друзьями</string>
     <string name="Setting1">Настройка намбер 1</string>
     <string name="Setting2">Настройка намбер 2</string>
@@ -16,7 +16,7 @@
     <string name="SocialMedia">Cгенерировать синтетическое слово</string>
     <string name="WarningEmptyNumLengthOfWord">Введите число пар букв от 1 до 10!</string>
     <string name="about">О программе</string>
-    <string name="aboutText">Тут будет описание программы. \n© HomeBrew Developers\nАвтор - Егор Девятов (2016 г.)</string>
+    <string name="aboutText">Тут будет описание программы. \n© HomeBrew Developers\nАвтор - Егор Девятов (2018 г.)</string>
     <string name="action_favorite">Любимая функция</string>
     <string name="action_save">Cохранить</string>
     <string name="action_settings">Настройки</string>
